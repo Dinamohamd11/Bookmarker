@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>bookmark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="style" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <section class="bookmark">
+        <div class="container">
+            <div class="text text-uppercase">
+                <h1>bookmarker</h1>
+            </div>
+            <form id="form">
+                <div class="txt text-center">
+                    <h2> Bookmark your favorite sites </h2>
+                </div>
+                <div class=" mb-3">
+                    <label class="form-label ">Site Name</label>
+                    <input name="name" class="form-control mb-4" id="name" placeholder="bookmark Name">
+                    <label class="form-label ">Site URL</label>
+                    <input name="url" class="form-control" id="url" placeholder="Website URL">
+                </div>
+                <div class="btnn text-center ">
+                    <button class="btn btn-primary " onclick="add()" id="subbtn">Submit</button>
+                </div>
+            </form>
+            <div class="dotted"></div>
+            <table class="table mt-5 text-center table-bordered bg-light-subtle">
+                <thead>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tBody">
+                    <!-- <tr>
+                                <td>${bookmrksContainer[i].name}</td>
+                                <td>
+                                    <button class=" btn btn-primary"> visit</buttoun>
+                                </td>
+                                <td>
+                                    <button class="btn btn-warning " onclick="update(i)"> Update </button>
+                                </td>
+                                <td>
+                                    <button class="btn btn-danger" onclick="deleteRow(i)"> Delete </button>
+                                </td>
+                            </tr>  -->
+                    <!-- <tr>
+                        <td>${i + 1}</td>
+                        <td>${bookmrksContainer[i].name}</td>
+                        <td>
+                            <button class="btn btn-danger" onclick="deleteRow(${i})"> visit </button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" onclick="deleteRow(${i})"> Delete </button>
+                        </td>
+                    </tr>` -->
+                    <!-- <tr>
+                        <td>${i + 1}</td>
+                        <td>${bookmrksContainer[i].name}</td>
+                        <td>
+                            <a class="btn btn-danger" target="_blank" href="'+url+'"> visit </a>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" onclick="deleteRow(${i})"> Delete </button>
+                        </td>
+                    </tr>` -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
